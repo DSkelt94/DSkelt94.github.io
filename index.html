@@ -13,15 +13,17 @@
             z-index: 999;
             background: #111;
         }
-        .flex { display: flex; gap: 2rem; flex-wrap: wrap; }
-        .flex img, .flex iframe { max-width: 100%; height: auto; }
-        .flex iframe { flex: 1 1 45%; min-width: 300px; }
+        .flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
+        .image-pair { display: flex; flex-direction: row; gap: 1rem; }
+        .image-pair img { max-width: 49%; height: auto; }
+        iframe.embed-viewer { width: 100%; height: 600px; border: none; margin: 1rem 0; }
     </style>
 </head>
 <body class="is-preload">
     <div id="wrapper">
         <header id="header" class="alt">
             <span class="logo"><img src="images/logo.svg" alt="Logo Placeholder" /></span>
+            <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
             <h1>Daniel Skelton</h1>
             <p>Robotic Modelling and Drone Skin Design Portfolio</p>
         </header>
@@ -53,27 +55,29 @@
 
             <section id="conception" class="main">
                 <header class="major"><h2>Conception Phase</h2></header>
-                <p>During the early conceptual phase, Group A focused on identifying an engaging project idea, initially considering a wearable helmet featuring eyes and an animal-inspired aesthetic... [Full content inserted here]</p>
-                <div class="flex">
+                <p>During the early conceptual phase, Group A focused on identifying an engaging project idea, initially considering a wearable helmet featuring eyes and an animal-inspired aesthetic...</p>
+                <div class="image-pair">
                     <img src="assets/Report Images and Files/Lion Head Sketch Image 1.jpg" alt="Lion Sketch 1">
                     <img src="assets/Report Images and Files/Lion Head Sketch Image 2.jpg" alt="Lion Sketch 2">
                 </div>
+                <p>Inspiration for the helmet design was drawn from various cartoon lion characters...</p>
                 <div class="flex">
-                    <iframe src="https://www.youtube.com/embed/Kd8dHOArikg" title="Joel Schulz Eye Mechanism" frameborder="0" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/pRF0nXyms0k" title="AquaCat Eye Mechanism" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/Kd8dHOArikg" title="Joel Schulz Eye Mechanism" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/pRF0nXyms0k" title="AquaCat Eye Mechanism" allowfullscreen></iframe>
                 </div>
-                <p><strong>Blender File:</strong> <a href="assets/Report Images and Files/Lion.blend1" download>Download Blender Model</a></p>
             </section>
 
             <section id="earlydev" class="main">
                 <header class="major"><h2>Early Development</h2></header>
-                <p>[All paragraphs from your Early Development content inserted here]</p>
+                <p>Simultaneously, some team members commenced work on enhancing the digital helmet model within Blender...</p>
+                <div class="image-pair">
+                    <img src="assets/Report Images and Files/Lion Render Final.png" alt="Final Lion Helmet Model">
+                </div>
                 <div class="flex">
                     <img src="assets/Report Images and Files/Project Gantt Chart.png" alt="Gantt Chart">
                     <img src="assets/Report Images and Files/Project Flow Chart.png" alt="Flow Chart">
                     <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="MoSCoW Chart">
                 </div>
-                <p><strong>STL File:</strong> <a href="assets/Report Images and Files/Lion.stl" download>Download STL Model</a></p>
                 <img src="assets/Report Images and Files/Eye Mechanism Fusion Screenshot.png" alt="Fusion Eye Mechanism Screenshot" />
             </section>
 
