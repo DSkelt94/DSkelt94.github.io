@@ -11,22 +11,47 @@
             position: sticky;
             top: 0;
             z-index: 999;
-            background: #111;
         }
         .flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
-        .image-pair { display: flex; flex-direction: row; gap: 1rem; }
-        .image-pair img { max-width: 49%; height: auto; }
-        iframe.embed-viewer { width: 100%; height: 600px; border: none; margin: 1rem 0; }
+        .image-pair { display: flex; flex-direction: row; gap: 1rem; justify-content: center; }
+        .image-pair img { max-width: 49%; height: auto; border-radius: 8px; }
+        .title-section {
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+        }
+        .title-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+        .title-section .student-details {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body class="is-preload">
     <div id="wrapper">
         <header id="header" class="alt">
             <span class="logo"><img src="images/logo.svg" alt="Logo Placeholder" /></span>
-            <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
             <h1>Daniel Skelton</h1>
             <p>Robotic Modelling and Drone Skin Design Portfolio</p>
         </header>
+
+        <section class="title-section">
+            <h2>Robotic Modelling and Drone Skin Design Assignment 1 – Project Artifact Design and Development Portfolio</h2>
+            <div class="image-pair">
+                <img src="assets/Report Images and Files/Lion Render Final.png" alt="Final Model Preview">
+                <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
+            </div>
+            <div class="student-details">
+                <p><strong>Student:</strong> Daniel Skelton<br>
+                <strong>Student Number:</strong> 21018316<br>
+                <strong>Module Code:</strong> COMP60019<br>
+                <strong>Module Leader:</strong> Luke Emery<br>
+                <strong>Group:</strong> A<br>
+                <strong>Submission Deadline:</strong> 16:59pm, 16th May 2025</p>
+            </div>
+        </section>
 
         <nav id="nav">
             <ul>
@@ -45,79 +70,33 @@
         <div id="main">
             <section id="introduction" class="main">
                 <header class="major"><h2>Introduction</h2></header>
-                <p><strong>Student:</strong> Daniel Skelton<br>
-                <strong>Student Number:</strong> 21018316<br>
-                <strong>Module Code:</strong> COMP60019<br>
-                <strong>Module Leader:</strong> Luke Emery<br>
-                <strong>Group:</strong> A<br>
-                <strong>Submission Deadline:</strong> 16:59pm, 16th May 2025</p>
+                <p>Welcome to my final year portfolio for the Robotic Modelling and Drone Skin Design module. This report outlines the creative and technical development of an animatronic lion helmet from concept to prototype using a suite of industry-standard technologies.</p>
             </section>
 
             <section id="conception" class="main">
                 <header class="major"><h2>Conception Phase</h2></header>
-                <p>During the early conceptual phase, Group A focused on identifying an engaging project idea, initially considering a wearable helmet featuring eyes and an animal-inspired aesthetic...</p>
+                <p>During the early conceptual phase, Group A focused on identifying an engaging project idea, initially considering a wearable helmet featuring eyes and an animal-inspired aesthetic. The team continued to explore individual ideas and concepts in the initial weeks of the project, ultimately deciding to pursue a 3D-printed animal helmet incorporating mechanical eyelids as the focus of the design.</p>
+                <p>Following group discussions, the team agreed to adopt a cartoonish young lion’s head aesthetic for the helmet. A team member was assigned to create preliminary design sketches of this concept, which were then reviewed by the team to facilitate a final decision, as illustrated in the sketches below.</p>
                 <div class="image-pair">
                     <img src="assets/Report Images and Files/Lion Head Sketch Image 1.jpg" alt="Lion Sketch 1">
                     <img src="assets/Report Images and Files/Lion Head Sketch Image 2.jpg" alt="Lion Sketch 2">
                 </div>
-                <p>Inspiration for the helmet design was drawn from various cartoon lion characters...</p>
+                <p>Inspiration for the helmet design was drawn from various cartoon lion characters from film and television, notably Simba from the popular film The Lion King. This served as the creative basis for the aesthetic vision of the helmet.</p>
+                <p>With the design concept established, the remainder of the conceptual phase focused on the mechanical design of the helmet’s eyes. Research included methods of eyeball and eyelid movement in robotics, incorporating a review of Staffordshire University laboratory equipment. One approach examined a Lego-based mechanical animatronic blinking eye system, demonstrated in a YouTube video. This system featured both lateral eye movement using a multi-motor setup and an eyelid mechanism. However, the team concluded that this system’s size would preclude integration into the helmet due to its bulk. Accommodating it would require a significantly larger helmet, increasing both design complexity and the risk of production failure. Additionally, such modifications would likely surpass the £200 project budget.</p>
                 <div class="flex">
                     <iframe src="https://www.youtube.com/embed/Kd8dHOArikg" title="Joel Schulz Eye Mechanism" allowfullscreen></iframe>
+                </div>
+                <p>An alternative eyelid mechanism was identified, which inspired the team’s subsequent development. This design, based on 3D-printed components and servo motor integration with basic parts, was considered more appropriate. It required considerably less space and weight, allowing room for a human head inside the helmet. Although capable of both eyeball and eyelid movement, the team opted to implement only the eyelid mechanism to reduce costs and adhere to the project budget.</p>
+                <div class="flex">
                     <iframe src="https://www.youtube.com/embed/pRF0nXyms0k" title="AquaCat Eye Mechanism" allowfullscreen></iframe>
                 </div>
-            </section>
-
-            <section id="earlydev" class="main">
-                <header class="major"><h2>Early Development</h2></header>
-                <p>Simultaneously, some team members commenced work on enhancing the digital helmet model within Blender...</p>
-                <div class="image-pair">
-                    <img src="assets/Report Images and Files/Lion Render Final.png" alt="Final Lion Helmet Model">
-                </div>
-                <div class="flex">
-                    <img src="assets/Report Images and Files/Project Gantt Chart.png" alt="Gantt Chart">
-                    <img src="assets/Report Images and Files/Project Flow Chart.png" alt="Flow Chart">
-                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="MoSCoW Chart">
-                </div>
-                <img src="assets/Report Images and Files/Eye Mechanism Fusion Screenshot.png" alt="Fusion Eye Mechanism Screenshot" />
-            </section>
-
-            <section id="production" class="main">
-                <header class="major"><h2>Production Phase</h2></header>
-                <p>[Details for 3D Printing and Silicon Production]</p>
-            </section>
-
-            <section id="testing" class="main">
-                <header class="major"><h2>Testing and Refinement</h2></header>
-                <p>[Details for Laser Cutting, Motion Capture, and Face Wear]</p>
-            </section>
-
-            <section id="conclusion" class="main">
-                <header class="major"><h2>Conclusion and Result</h2></header>
-                <p>[Conclusion and final reflections]</p>
-            </section>
-
-            <section id="bibliography" class="main">
-                <header class="major"><h2>Bibliography</h2></header>
-                <ul>
-                    <li>Thompson, R. (2021) <em>3D Printing for Engineers</em>. 2nd ed. London: Springer.</li>
-                </ul>
-            </section>
-
-            <section id="appendices" class="main">
-                <header class="major"><h2>Appendices</h2></header>
-                <ul>
-                    <li>Appendix A – STL Raw Exports</li>
-                    <li>Appendix B – Scan Mesh Comparisons</li>
-                    <li>Appendix C – Haptic Pen Test Models</li>
-                </ul>
-            </section>
-
-            <section id="contact" class="main">
-                <header class="major"><h2>Contact</h2></header>
-                <dl class="alt">
-                    <dt>Email</dt>
-                    <dd><a href="mailto:s018316l@student.staffs.ac.uk">s018316l@student.staffs.ac.uk</a></dd>
-                </dl>
+                <h3>2.1 Technologies</h3>
+                <h4>2.1.1 Blender</h4>
+                <p>To support the conceptual phase, the software Blender was used to create initial designs for the proposed helmet. This technology enabled rapid 3D visualisation of the artefact without the need for physical materials or construction. Blender’s interface and sculpting tools provided flexibility to shape the model in a way that closely resembled the intended aesthetic. It facilitated significant creative exploration during the conceptual stage and offered the team a realistic perspective on the feasibility of their vision.</p>
+                <p><strong>Download Model:</strong> <a href="assets/Report Images and Files/Lion.blend1" download>Lion.blend1</a></p>
+                <p>However, the software’s complexity soon became apparent. As its use increased, so did the difficulty in achieving precise designs that matched the envisioned lion’s head...</p>
+                <h4>2.1.2 3D Scanning</h4>
+                <p>The team considered using 3D scanning technology to capture the shape of a team member’s head, which would have assisted in determining helmet sizing and design accuracy...</p>
             </section>
         </div>
 
