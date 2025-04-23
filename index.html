@@ -11,12 +11,18 @@
             position: sticky;
             top: 0;
             z-index: 999;
+            background: #f8f8f8;
+            border-radius: 8px;
+            margin: 0 auto;
         }
         nav#nav ul {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
         }
         .flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
         .image-pair { display: flex; flex-direction: row; gap: 1rem; justify-content: center; margin-bottom: 2rem; }
@@ -54,15 +60,14 @@
             <p>Robotic Modelling and Drone Skin Design Portfolio</p>
         </header>
 
-        <section class="title-section">
-            <h2>Robotic Modelling and Drone Skin Design Assignment 1 – Project Artifact Design and Development Portfolio</h2>
-            <div class="image-pair">
-                <img src="assets/Report Images and Files/Lion Render Final.png" alt="Final Model Preview">
-                <div class="viewer-3d">
-                    <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
-                </div>
+        <section class="title-section" style="padding-top: 1rem;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem;">
+                Robotic Modelling and Drone Skin Design Assignment 1 – Project Artifact Design and Development Portfolio
+            </h2>
+            <div class="viewer-3d">
+                <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
             </div>
-            <div class="student-details">
+            <div class="student-details" style="font-size: 1.1rem;">
                 <p><strong>Student:</strong> Daniel Skelton<br>
                 <strong>Student Number:</strong> 21018316<br>
                 <strong>Module Code:</strong> COMP60019<br>
@@ -71,6 +76,7 @@
                 <strong>Submission Deadline:</strong> 16:59pm, 16th May 2025</p>
             </div>
         </section>
+
 
         <nav id="nav">
             <ul>
@@ -114,7 +120,7 @@
                 <h4>2.1.1 Blender</h4>
                 <p>To support the conceptual phase, the software Blender was used to create initial designs for the proposed helmet. This technology enabled rapid 3D visualisation of the artefact without the need for physical materials or construction. Blender’s interface and sculpting tools provided flexibility to shape the model in a way that closely resembled the intended aesthetic. It facilitated significant creative exploration during the conceptual stage and offered the team a realistic perspective on the feasibility of their vision.</p>
                 <div style="text-align: center; margin-bottom: 2rem;">
-                    <img src="assets/Report Images and Files/Lion_Blend_Image1.png" alt="Lion Blender Model" style="max-width: 600px; width: 100%; height: auto; border-radius: 8px;">
+                    <img src="assets/Report Images and Files/Lion_Blend_Image1.png" alt="Lion Blender Model" style="max-width: 900px; width: 100%; height: auto; border-radius: 8px;">
                 </div>
                 <p>However, the software’s complexity soon became apparent. As its use increased, so did the difficulty in achieving precise designs that matched the envisioned lion’s head. This limitation prompted a review of the team’s skill set, resulting in the assignment of a more experienced member to take on the Blender design tasks...</p>
                 <h4>2.1.2 3D Scanning</h4>
@@ -126,11 +132,13 @@
             <section id="earlydev" class="main">
                 <header class="major"><h2>Early Development</h2></header>
                 <p>During this phase of development, one team member undertook the task of project planning, producing the relevant Gantt, Flow, and MoSCoW prioritisation charts to support the team’s progress and objectives within the scope of the project. This team member also established Team A’s GitHub Organisation, enabling the assignment of member-specific tasks and ensuring effective tracking and coordination across all phases of the project.</p>
-                <div class="image-pair">
-                    <img src="assets/Report Images and Files/Project Gantt Chart.png" alt="Project Gantt Chart">
-                    <img src="assets/Report Images and Files/Project Flow Chart.png" alt="Project Flow Chart">
-                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="Project MoSCoW Chart">
+                
+                <div class="image-pair" style="flex-direction: column; align-items: center;">
+                    <img src="assets/Report Images and Files/Project Gantt Chart.png" alt="Project Gantt Chart" style="width: 100%; max-width: 600px; margin-bottom: 1rem;">
+                    <img src="assets/Report Images and Files/Project Flow Chart.png" alt="Project Flow Chart" style="width: 100%; max-width: 600px; margin-bottom: 1rem;">
+                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="Project MoSCoW Chart" style="width: 100%; max-width: 600px;">
                 </div>
+
                 <p>Given the strict project deadline of 16:59 on 16th May 2025, the MoSCoW prioritisation chart played a critical role in directing the team’s focus towards the most essential tasks. This approach helped maintain a structured workflow and ensured the team remained aligned on key deliverables. The accompanying flow chart further supported this by providing a visual representation of the project’s current stage, helping the team identify and prioritise areas of design and production development.</p>
                 <p>Simultaneously, some team members commenced work on enhancing the digital helmet model within Blender, increasing the mesh resolution to achieve greater geometrical smoothness. Although still in its early stages, this refinement marked a significant step towards developing a model that would more accurately reflect the desired aesthetic, paving the way for final design edits.</p>
                 <div class="viewer-3d">
@@ -139,13 +147,19 @@
                 <p>With the completion of early digital prototypes using the technologies, the foundational development work positioned the team for success in the subsequent phases of product production.</p>
                 <h3>3.1 Technologies</h3>
                 <h4>3.1.1 Industrial Robot Articulation</h4>
-                <p>The University’s industrial robotic arm was not utilised during the development of Group A’s artefact, as it offered no direct technical benefits relevant to the design or construction of the helmet...</p>
+                <p>The University’s industrial robotic arm was not utilised during the development of Group A’s artefact, as it offered no direct technical benefits relevant to the design or construction of the helmet.</p>
+                <p>However, despite not being employed in this project, the capabilities of such robotic arms can be extremely valuable in production-focused contexts. In a fully scaled manufacturing scenario, robotic arms can significantly enhance development efficiency and reduce production costs.</p>
+                <p>This technology also serves as a useful reference for understanding the movement and range constraints applicable to articulated exoskeletons or wearable devices. In the case of exoskeletal systems involving jointed motion—such as arms or fingers—robotic arms provide inspiration for the design of safe, durable systems that incorporate joint or rotational movement within defined limits. In this regard, such robotic systems could be viewed as analogous to the control mechanisms of an exoskeleton and would be more relevant in either the early concept validation or later-stage refinement phases of development.</p>
+                <p>A key limitation of these systems lies in their complexity and the high level of expertise required for their operation. Their use is typically restricted to large-scale industrial settings due to the extensive training, maintenance, and safety infrastructure necessary to support them. These factors, combined with the high cost of the equipment itself, mean that their applicability is generally confined to high-budget product development environments</p>
                 <h4>3.1.2 Fusion 4 CAD</h4>
-                <p>Fusion CAD is a 3D modelling environment specifically geared towards producing accurate and dimensionally precise models...</p>
+                <p>Fusion CAD is a 3D modelling environment specifically geared towards producing accurate and dimensionally precise models, particularly for applications in manufacturing and production. Its suite of tools enables rapid yet precise adjustments, which enhances accuracy throughout the production pipeline and helps to minimise errors during machining or 3D printing of parts.</p>
+                <p>These tools are particularly beneficial for integrating mechanical components such as motors, hinges, and other moving parts into a system. They support the design of complex geometries and ensure alignment across multiple iterations, aiding in the refinement of a product throughout its development.</p>
+                <p>One of Fusion CAD’s key features is its built-in timeline and development history, which allows users to track modifications and easily revert to previous stages. This functionality proved especially valuable during the development and refinement of the eye mechanism for this project’s artefact. The software was employed to design and improve the eye and eyelid system, contributing significantly to the overall quality and functionality of the final prototype.</p>
+                <p>While Fusion CAD is less suited to modelling organic shapes, its strength lies in mechanical detailing, making it ideal for designing the engineered components of the eyelid mechanism. These elements were intended for integration within the interior of the helmet. The inclusion of motion simulation and part rendering tools also enabled validation of the mechanism’s practicality prior to 3D printing, thereby reducing development overheads and helping to ensure the project remained within budget.</p>
                 <div style="text-align: center; margin-bottom: 2rem;">
                     <img src="assets/Report Images and Files/Eye Mechanism Fusion Screenshot.png" alt="Fusion Eye Mechanism Screenshot" style="max-width: 600px; width: 100%; height: auto; border-radius: 8px;">
                 </div>
-                <p>While Fusion CAD is less suited to modelling organic shapes...</p>
+                <p>Overall, Fusion CAD served as a strong complement to Blender. While Blender facilitated the initial stages of visual ideation, Fusion CAD contributed critical technical feasibility. Its precision and functional capabilities made it an essential tool for developing key mechanical features of the artefact.</p>
                 <h4>3.1.3 Haptic Pen</h4>
                 <p>Although not ultimately used in the final development process, the haptic pen presented a promising tool for achieving fine-grain control, particularly suited to sculpting organic shapes such as the lion-shaped helmet...</p>
             </section>
