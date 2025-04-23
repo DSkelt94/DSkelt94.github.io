@@ -16,13 +16,13 @@
             margin: 0 auto;
         }
         nav#nav ul {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(9, auto);
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-            max-width: 1000px;
+            column-gap: 2rem;
+            padding: 1rem;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            max-width: 960px;
         }
         .flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
         .image-pair { display: flex; flex-direction: row; gap: 1rem; justify-content: center; margin-bottom: 2rem; }
@@ -60,11 +60,11 @@
             <p>Robotic Modelling and Drone Skin Design Portfolio</p>
         </header>
 
-        <section class="title-section" style="padding-top: 1rem;">
-            <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem;">
+        <section class="title-section" style="padding-top: 0.5rem;">
+            <h2 style="font-size: 2.4rem; margin-bottom: 1.5rem;">
                 Robotic Modelling and Drone Skin Design Assignment 1 – Project Artifact Design and Development Portfolio
             </h2>
-            <div class="viewer-3d">
+            <div class="viewer-3d" style="max-width: 800px; margin: 0 auto 1.5rem auto;">
                 <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
             </div>
             <div class="student-details" style="font-size: 1.1rem;">
@@ -76,7 +76,6 @@
                 <strong>Submission Deadline:</strong> 16:59pm, 16th May 2025</p>
             </div>
         </section>
-
 
         <nav id="nav">
             <ul>
@@ -133,12 +132,13 @@
                 <header class="major"><h2>Early Development</h2></header>
                 <p>During this phase of development, one team member undertook the task of project planning, producing the relevant Gantt, Flow, and MoSCoW prioritisation charts to support the team’s progress and objectives within the scope of the project. This team member also established Team A’s GitHub Organisation, enabling the assignment of member-specific tasks and ensuring effective tracking and coordination across all phases of the project.</p>
                 
-                <div class="image-pair" style="flex-direction: column; align-items: center;">
-                    <img src="assets/Report Images and Files/Project Gantt Chart.png" alt="Project Gantt Chart" style="width: 100%; max-width: 600px; margin-bottom: 1rem;">
-                    <img src="assets/Report Images and Files/Project Flow Chart.png" alt="Project Flow Chart" style="width: 100%; max-width: 600px; margin-bottom: 1rem;">
-                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="Project MoSCoW Chart" style="width: 100%; max-width: 600px;">
+                <p><strong>Gantt Chart:</strong> You can view the full Gantt chart by clicking this link: <a href="https://lucid.app/lucidspark/15240018-898b-48e1-a2f7-b914eec65652/edit?invitationId=inv_e3995c11-8a23-486b-a6da-935953aac5c3" target="_blank">View Gantt Chart</a></p>
+            
+                <div class="image-pair" style="display: flex; justify-content: center; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                    <img src="assets/Report Images and Files/Project Flow Chart.png" alt="Project Flow Chart" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;">
+                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="Project MoSCoW Chart" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;">
                 </div>
-
+                
                 <p>Given the strict project deadline of 16:59 on 16th May 2025, the MoSCoW prioritisation chart played a critical role in directing the team’s focus towards the most essential tasks. This approach helped maintain a structured workflow and ensured the team remained aligned on key deliverables. The accompanying flow chart further supported this by providing a visual representation of the project’s current stage, helping the team identify and prioritise areas of design and production development.</p>
                 <p>Simultaneously, some team members commenced work on enhancing the digital helmet model within Blender, increasing the mesh resolution to achieve greater geometrical smoothness. Although still in its early stages, this refinement marked a significant step towards developing a model that would more accurately reflect the desired aesthetic, paving the way for final design edits.</p>
                 <div class="viewer-3d">
