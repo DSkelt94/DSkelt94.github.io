@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+        /* === Navigation Bar === */
         #nav {
             position: sticky;
             top: 0;
@@ -14,48 +15,87 @@
             background: #f8f8f8;
             border-radius: 8px;
             margin: 0 auto;
-            max-width: 960px; /* matches white container */
+            max-width: 1000px; /* matches main content */
             overflow: hidden;
         }
-        
+    
         nav#nav ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap; /* allows wrapping cleanly */
+            flex-wrap: wrap;
             gap: 1.5rem;
-            padding: 1rem 2rem;
+            padding: 1rem 1rem;
             margin: 0 auto;
-            width: 100%;
+            max-width: 1000px;
         }
+    
         nav#nav ul li a {
             font-size: 0.95rem;
         }
-        .flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
-        .image-pair { display: flex; flex-direction: row; gap: 1rem; justify-content: center; margin-bottom: 2rem; }
-        .image-pair img { max-width: 49%; height: auto; border-radius: 8px; }
+    
+        /* === Page Layout and Content === */
+        .flex {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    
+        .image-pair {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+    
+        .image-pair img {
+            max-width: 49%;
+            height: auto;
+            border-radius: 8px;
+        }
+    
         iframe {
             width: 100%;
             max-width: 640px;
             height: 360px;
             margin-bottom: 2rem;
         }
+    
         .title-section {
             text-align: center;
             padding: 2rem 1rem 1rem 1rem;
         }
+    
         .title-section h2 {
             font-size: 1.75rem;
             margin-bottom: 1rem;
         }
+    
         .title-section .student-details {
             margin-top: 1.5rem;
             font-size: 1rem;
         }
+    
+        /* === STL Viewer Layout === */
         .viewer-3d {
             display: flex;
             justify-content: center;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem; /* tighter spacing below STL */
+        }
+    
+        .viewer-3d + p {
+            margin-top: 0;
+        }
+    
+        /* === Remove Top Gap === */
+        body {
+            margin-top: 0;
+        }
+    
+        #header.alt {
+            padding: 1rem 0 0.5rem 0;
         }
     </style>
 </head>
