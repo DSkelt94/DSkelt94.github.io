@@ -12,20 +12,37 @@
             top: 0;
             z-index: 999;
         }
+        nav#nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
         .flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
-        .image-pair { display: flex; flex-direction: row; gap: 1rem; justify-content: center; }
+        .image-pair { display: flex; flex-direction: row; gap: 1rem; justify-content: center; margin-bottom: 2rem; }
         .image-pair img { max-width: 49%; height: auto; border-radius: 8px; }
+        iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            margin-bottom: 2rem;
+        }
         .title-section {
             text-align: center;
             padding: 2rem 1rem 1rem 1rem;
         }
         .title-section h2 {
             font-size: 1.75rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         .title-section .student-details {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             font-size: 1rem;
+        }
+        .viewer-3d {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
@@ -41,7 +58,9 @@
             <h2>Robotic Modelling and Drone Skin Design Assignment 1 – Project Artifact Design and Development Portfolio</h2>
             <div class="image-pair">
                 <img src="assets/Report Images and Files/Lion Render Final.png" alt="Final Model Preview">
-                <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
+                <div class="viewer-3d">
+                    <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
+                </div>
             </div>
             <div class="student-details">
                 <p><strong>Student:</strong> Daniel Skelton<br>
@@ -82,7 +101,8 @@
                     <img src="assets/Report Images and Files/Lion Head Sketch Image 2.jpg" alt="Lion Sketch 2">
                 </div>
                 <p>Inspiration for the helmet design was drawn from various cartoon lion characters from film and television, notably Simba from the popular film The Lion King. This served as the creative basis for the aesthetic vision of the helmet.</p>
-                <p>With the design concept established, the remainder of the conceptual phase focused on the mechanical design of the helmet’s eyes. Research included methods of eyeball and eyelid movement in robotics, incorporating a review of Staffordshire University laboratory equipment. One approach examined a Lego-based mechanical animatronic blinking eye system, demonstrated in a YouTube video. This system featured both lateral eye movement using a multi-motor setup and an eyelid mechanism. However, the team concluded that this system’s size would preclude integration into the helmet due to its bulk. Accommodating it would require a significantly larger helmet, increasing both design complexity and the risk of production failure. Additionally, such modifications would likely surpass the £200 project budget.</p>
+                <p>With the design concept established, the remainder of the conceptual phase focused on the mechanical design of the helmet’s eyes. Research included methods of eyeball and eyelid movement in robotics, incorporating a review of Staffordshire University laboratory equipment.</p>
+                <p>One approach examined a Lego-based mechanical animatronic blinking eye system, demonstrated in a YouTube video. This system featured both lateral eye movement using a multi-motor setup and an eyelid mechanism. However, the team concluded that this system’s size would preclude integration into the helmet due to its bulk. Accommodating it would require a significantly larger helmet, increasing both design complexity and the risk of production failure. Additionally, such modifications would likely surpass the £200 project budget.</p>
                 <div class="flex">
                     <iframe src="https://www.youtube.com/embed/Kd8dHOArikg" title="Joel Schulz Eye Mechanism" allowfullscreen></iframe>
                 </div>
@@ -93,10 +113,84 @@
                 <h3>2.1 Technologies</h3>
                 <h4>2.1.1 Blender</h4>
                 <p>To support the conceptual phase, the software Blender was used to create initial designs for the proposed helmet. This technology enabled rapid 3D visualisation of the artefact without the need for physical materials or construction. Blender’s interface and sculpting tools provided flexibility to shape the model in a way that closely resembled the intended aesthetic. It facilitated significant creative exploration during the conceptual stage and offered the team a realistic perspective on the feasibility of their vision.</p>
-                <p><strong>Download Model:</strong> <a href="assets/Report Images and Files/Lion.blend1" download>Lion.blend1</a></p>
-                <p>However, the software’s complexity soon became apparent. As its use increased, so did the difficulty in achieving precise designs that matched the envisioned lion’s head...</p>
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="assets/Report Images and Files/Lion_Blend_Image1.png" alt="Lion Blender Model" style="max-width: 600px; width: 100%; height: auto; border-radius: 8px;">
+                </div>
+                <p>However, the software’s complexity soon became apparent. As its use increased, so did the difficulty in achieving precise designs that matched the envisioned lion’s head. This limitation prompted a review of the team’s skill set, resulting in the assignment of a more experienced member to take on the Blender design tasks...</p>
                 <h4>2.1.2 3D Scanning</h4>
-                <p>The team considered using 3D scanning technology to capture the shape of a team member’s head, which would have assisted in determining helmet sizing and design accuracy...</p>
+                <p>The team considered using 3D scanning technology to capture the shape of a team member’s head, which would have assisted in determining helmet sizing and design accuracy. The resulting STL file could have served as a virtual reference for fitting and for preparing 3D print dimensions. However, the team ultimately concluded that, due to the availability of scaling tools within design software, this approach would not be the most efficient use of time. Given that the design is conceptual and not intended for full production, efforts were redirected to higher-priority tasks.</p>
+                <p>Although not utilised in this project, 3D scanning can significantly improve accuracy in production, especially for wearable items like helmets. It can support the development of generalised sizing for consumers, though human variation presents a challenge. Nevertheless, it could enable production of size-specific models that accommodate a range of users.</p>
+                <p>One potential issue with 3D scanning is the introduction of surface noise, which can necessitate time-consuming clean-up of the scanned artefact. If employed after the early production stage, this could become problematic, where refinement and reprinting require greater precision and effort to achieve effective results.</p>
+            </section>
+
+            <section id="earlydev" class="main">
+                <header class="major"><h2>Early Development</h2></header>
+                <p>During this phase of development, one team member undertook the task of project planning, producing the relevant Gantt, Flow, and MoSCoW prioritisation charts to support the team’s progress and objectives within the scope of the project. This team member also established Team A’s GitHub Organisation, enabling the assignment of member-specific tasks and ensuring effective tracking and coordination across all phases of the project.</p>
+                <div class="image-pair">
+                    <img src="assets/Report Images and Files/Project Gantt Chart.png" alt="Project Gantt Chart">
+                    <img src="assets/Report Images and Files/Project Flow Chart.png" alt="Project Flow Chart">
+                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="Project MoSCoW Chart">
+                </div>
+                <p>Given the strict project deadline of 16:59 on 16th May 2025, the MoSCoW prioritisation chart played a critical role in directing the team’s focus towards the most essential tasks. This approach helped maintain a structured workflow and ensured the team remained aligned on key deliverables. The accompanying flow chart further supported this by providing a visual representation of the project’s current stage, helping the team identify and prioritise areas of design and production development.</p>
+                <p>Simultaneously, some team members commenced work on enhancing the digital helmet model within Blender, increasing the mesh resolution to achieve greater geometrical smoothness. Although still in its early stages, this refinement marked a significant step towards developing a model that would more accurately reflect the desired aesthetic, paving the way for final design edits.</p>
+                <div class="viewer-3d">
+                    <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
+                </div>
+                <p>With the completion of early digital prototypes using the technologies, the foundational development work positioned the team for success in the subsequent phases of product production.</p>
+                <h3>3.1 Technologies</h3>
+                <h4>3.1.1 Industrial Robot Articulation</h4>
+                <p>The University’s industrial robotic arm was not utilised during the development of Group A’s artefact, as it offered no direct technical benefits relevant to the design or construction of the helmet...</p>
+                <h4>3.1.2 Fusion 4 CAD</h4>
+                <p>Fusion CAD is a 3D modelling environment specifically geared towards producing accurate and dimensionally precise models...</p>
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="assets/Report Images and Files/Eye Mechanism Fusion Screenshot.png" alt="Fusion Eye Mechanism Screenshot" style="max-width: 600px; width: 100%; height: auto; border-radius: 8px;">
+                </div>
+                <p>While Fusion CAD is less suited to modelling organic shapes...</p>
+                <h4>3.1.3 Haptic Pen</h4>
+                <p>Although not ultimately used in the final development process, the haptic pen presented a promising tool for achieving fine-grain control, particularly suited to sculpting organic shapes such as the lion-shaped helmet...</p>
+            </section>
+
+            <section id="production" class="main">
+                <header class="major"><h2>4. Production Phase</h2></header>
+                <h3>4.1 Technologies</h3>
+                <h4>4.1.1 3D Printing</h4>
+                <p>[Content to be added]</p>
+                <h4>4.1.2 Silicon Production</h4>
+                <p>[Content to be added]</p>
+            </section>
+            
+            <section id="testing" class="main">
+                <header class="major"><h2>5. Testing and Refinement</h2></header>
+                <h3>5.1 Technologies</h3>
+                <h4>5.1.1 Laser Cutting</h4>
+                <p>[Content to be added]</p>
+                <h4>5.1.2 Motion Capture</h4>
+                <p>[Content to be added]</p>
+                <h4>5.1.3 Motion Capture – Face Wear</h4>
+                <p>[Content to be added]</p>
+            </section>
+            
+            <section id="conclusion" class="main">
+                <header class="major"><h2>6. Conclusion and Result</h2></header>
+                <p>[Content to be added]</p>
+            </section>
+            
+            <section id="bibliography" class="main">
+                <header class="major"><h2>7. Bibliography</h2></header>
+                <p>[Bibliography content to be added]</p>
+            </section>
+            
+            <section id="appendices" class="main">
+                <header class="major"><h2>8. Appendices</h2></header>
+                <p>[Appendices to be added]</p>
+            </section>
+            
+            <section id="contact" class="main">
+                <header class="major"><h2>9. Contact Details</h2></header>
+                <dl class="alt">
+                    <dt>Email</dt>
+                    <dd><a href="mailto:s018316l@student.staffs.ac.uk">s018316l@student.staffs.ac.uk</a></dd>
+                </dl>
             </section>
         </div>
 
