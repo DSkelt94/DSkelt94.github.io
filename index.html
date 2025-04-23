@@ -14,19 +14,25 @@
             background: #f8f8f8;
             border-radius: 8px;
             margin: 0 auto;
+            max-width: 960px;
+            overflow: hidden;
         }
         nav#nav ul {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            flex-wrap: nowrap;
-            gap: 2rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
             padding: 1rem 2rem;
             margin: 0 auto;
-            max-width: 960px;
+            white-space: nowrap;
+            max-width: 100%;
             overflow-x: auto;
+            scroll-behavior: smooth;
         }
-
+        nav#nav ul li a {
+            font-size: 0.95rem;
+        }
         .flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
         .image-pair { display: flex; flex-direction: row; gap: 1rem; justify-content: center; margin-bottom: 2rem; }
         .image-pair img { max-width: 49%; height: auto; border-radius: 8px; }
@@ -67,7 +73,7 @@
             <h2 style="font-size: 2.4rem; margin-bottom: 1.5rem;">
                 Robotic Modelling and Drone Skin Design Assignment 1 – Project Artifact Design and Development Portfolio
             </h2>
-            <div class="viewer-3d" style="max-width: 800px; margin: 0 auto 1.5rem auto;">
+            <div class="viewer-3d" style="max-width: 1000px; height: 600px; margin: 0 auto 2rem auto;">
                 <script src="https://embed.github.com/view/3d/DSkelt94/dskelt94.github.io/main/assets/Report%20Images%20and%20Files/Lion.stl"></script>
             </div>
             <p style="text-align: center;"><em>Figure 1: Interactive 3D STL Model of Lion Helmet</em></p>
@@ -108,8 +114,8 @@
                 <div class="image-pair">
                     <img src="assets/Report Images and Files/Lion Head Sketch Image 1.jpg" alt="Lion Sketch 1">
                     <img src="assets/Report Images and Files/Lion Head Sketch Image 2.jpg" alt="Lion Sketch 2">
-                    <p><em>Figure 2: Initial Lion Head Sketches</em></p>
                 </div>
+                <p><em>Figure 2: Initial Lion Head Sketches</em></p>
                 <p>Inspiration for the helmet design was drawn from various cartoon lion characters from film and television, notably Simba from the popular film The Lion King. This served as the creative basis for the aesthetic vision of the helmet.</p>
                 <p>With the design concept established, the remainder of the conceptual phase focused on the mechanical design of the helmet’s eyes. Research included methods of eyeball and eyelid movement in robotics, incorporating a review of Staffordshire University laboratory equipment.</p>
                 <p>One approach examined a Lego-based mechanical animatronic blinking eye system, demonstrated in a YouTube video. This system featured both lateral eye movement using a multi-motor setup and an eyelid mechanism. However, the team concluded that this system’s size would preclude integration into the helmet due to its bulk. Accommodating it would require a significantly larger helmet, increasing both design complexity and the risk of production failure. Additionally, such modifications would likely surpass the £200 project budget.</p>
@@ -146,7 +152,7 @@
                 </div>
                 
                 <div style="text-align: center; margin-bottom: 2rem;">
-                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="Project MoSCoW Chart" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px;">
+                    <img src="assets/Report Images and Files/Project MoSCoW Chart.png" alt="Project MoSCoW Chart" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px;">
                     <p><em>Figure 5: MoSCoW Prioritisation Chart</em></p>
                 </div>
                                 
