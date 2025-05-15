@@ -97,6 +97,34 @@
         #header.alt {
             padding: 1rem 0 0.5rem 0;
         }
+
+        nav#nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f8f8f8;
+            border-radius: 8px;
+            margin: 0 auto;
+            max-width: 1000px;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        
+        nav#nav .nav-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 2rem;
+            padding: 0.5rem 0;
+            list-style: none;
+            margin: 0;
+        }
+        
+        nav#nav .nav-row li a {
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -125,17 +153,20 @@
         </section>
 
         <nav id="nav">
-            <ul>
+            <ul class="nav-row">
                 <li><a href="#introduction" class="active">Introduction</a></li>
                 <li><a href="#conception">Conception Phase</a></li>
                 <li><a href="#earlydev">Early Development</a></li>
                 <li><a href="#production">Production Phase</a></li>
-                <li><a href="#testing">Future Work</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+            <ul class="nav-row">
+                <li><a href="#testing">Testing & Refinement</a></li>
+                <li><a href="#conclusion">Conclusion & Result</a></li>
                 <li><a href="#bibliography">Bibliography</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
 
         <div id="main">
             <section id="introduction" class="main">
